@@ -1,9 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"my/feature1"
+)
 
 func main() {
 	fmt.Println("Чууваак")
+
+	feature1.Feature1()
 }
 
 func product() int {
