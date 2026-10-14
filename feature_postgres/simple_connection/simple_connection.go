@@ -6,6 +6,6 @@ import (
 	"github.com/jackc/pgx/v5"
 )
 
-func ConnectDB(ctx context.Context) (*pgx.Conn, error) {
-	return pgx.Connect(ctx, "postgres://postgres:86850@localhost:5432/postgres")
+func ConnectDB(ctx context.Context, conn string) (*pgx.Conn, error) {
+	return pgx.Connect(ctx, conn)
 }
